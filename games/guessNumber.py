@@ -27,6 +27,8 @@ for i in range(maxAttempt):
     # Вводимое число пользователя
     userNum = int(input("Введи свое число: "))
 
+
+
 #От количества попыток меняется окончание слова
     if attempt == 1:
         userAttmpt = "попытка"

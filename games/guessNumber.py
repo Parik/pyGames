@@ -1,7 +1,9 @@
 import random
 
 name = input("Привет, как тебя зовут? ")
+print("")
 print(f"Давай сыграем в игру {name}")
+print("")
 
 # попытка
 attempt = 1
@@ -15,7 +17,7 @@ b = int(input("И по какое число? "))
 
 #Число которое будем отгадывать
 myNum = random.randint(a, b)
-
+print("")
 print("Начнем игру. Да прибудет с тобой сила!")
 
 
@@ -25,6 +27,7 @@ for i in range(maxAttempt):
     # Вводимое число пользователя
     userNum = int(input("Введи свое число: "))
 
+#От количества попыток меняется окончание слова
     if attempt == 1:
         userAttmpt = "попытка"
     elif i >1 & i <=4:
@@ -42,6 +45,7 @@ for i in range(maxAttempt):
         print("Твое число больше")
         attempt = attempt+1
 
+#Если не отгодал
 if  myNum != userNum:
     print(f"Ты не отгадал. Я загадал число {myNum} ")
 
